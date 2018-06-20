@@ -1,0 +1,26 @@
+{
+  "name": "mb-config",
+  "version": "0.1.0",
+  "description": "MoneyButton configuration.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo No tests for the config module yet.",
+    "build": "babel src -d lib",
+    "build:watch": "babel -w src -d lib",
+    "dev": "NODE_ENV=dev yarn build:watch"
+  },
+  "repository": "https://github.com/yoursnetwork/yours",
+  "author": "Yours Inc.",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.47"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.0.0-beta.47",
+    "@babel/core": "7.0.0-beta.47",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.47",
+    "@babel/preset-env": "7.0.0-beta.47",
+    "dotenv": "5.0.1"
+  }
+}
