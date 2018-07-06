@@ -4,6 +4,8 @@
   "description": "MoneyButton configuration.",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "standard --parser=babel-eslint",
+    "pretest": "yarn lint",
     "test": "echo No tests for the config module yet.",
     "build": "babel src -d lib",
     "build:watch": "babel -w src -d lib",
@@ -21,6 +23,8 @@
     "@babel/core": "7.0.0-beta.47",
     "@babel/plugin-transform-runtime": "7.0.0-beta.47",
     "@babel/preset-env": "7.0.0-beta.47",
-    "dotenv": "5.0.1"
+    "dotenv": "5.0.1",
+    "babel-eslint": "8.2.5",
+    "standard": "11.0.1"
   }
 }
