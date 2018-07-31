@@ -12,12 +12,14 @@
     "pretest": "yarn lint",
     "build":
       "concurrently --names 'browser,node' 'yarn build:browser' 'yarn build:node'",
+    "build:dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build",
+    "build:prod": "NODE_ENV=prod dotenv -e ../../.env.prod -- yarn build",
     "build:watch":
       "concurrently --names 'browser,node' 'yarn build:browser -w' 'yarn build:node -w'",
     "build:browser": "webpack",
     "build:node": "rollup -c",
-    "dev": "yarn build:watch",
-    "test": "yarn test:mocha",
+    "dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build:watch",
+    "test": "NODE_ENV=test dotenv -e ../../.env.test -- yarn test:mocha",
     "test:mocha": "NODE_ENV=test mocha -R progress"
   },
   "repository": "https://github.com/yoursnetwork/yours",
@@ -38,6 +40,7 @@
     "babel-loader": "8.0.0-beta.4",
     "concurrently": "3.6.1",
     "dotenv": "5.0.1",
+    "dotenv-cli": "1.4.0",
     "mocha": "5.2.0",
     "rollup-plugin-babel": "4.0.0-beta.7",
     "rollup": "0.63.4",
