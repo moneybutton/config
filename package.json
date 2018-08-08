@@ -13,7 +13,7 @@
     "build":
       "concurrently --names 'browser,node' 'yarn build:browser' 'yarn build:node'",
     "build:dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build",
-    "build:prod": "NODE_ENV=prod dotenv -e ../../.env.prod -- yarn build",
+    "build:prod": "NODE_ENV=production dotenv -e ../../.env.prod -- yarn build",
     "build:watch":
       "concurrently --names 'browser,node' 'yarn build:browser -w' 'yarn build:node -w'",
     "build:browser": "webpack",
