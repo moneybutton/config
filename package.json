@@ -22,7 +22,7 @@
     "test": "NODE_ENV=test dotenv -e ../../.env.test -- yarn test:mocha",
     "test:mocha": "NODE_ENV=test mocha -R progress"
   },
-  "repository": "https://github.com/yoursnetwork/yours",
+  "repository": "https://github.com/moneybutton/yours",
   "author": "Yours Inc.",
   "license": "UNLICENSED",
   "private": true,
