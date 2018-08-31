@@ -1,7 +1,7 @@
 {
   "name": "mb-config",
   "version": "0.1.0",
-  "description": "MoneyButton configuration.",
+  "description": "Money Button configuration.",
   "main": "dist/mb-config.cjs.js",
   "module": "dist/mb-config.esm.js",
   "browser": "dist/mb-config.umd.js",
