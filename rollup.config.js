@@ -95,7 +95,8 @@ export default [
       minify({
         comments: false,
         banner: getBanner(),
-        bannerNewLine: true
+        bannerNewLine: false, // Don't set bannerNewLine to true or it'll wipe out sourcemaps. See:
+        sourceMap: true //       https://github.com/Comandeer/rollup-plugin-babel-minify/issues/133.
       })
     ]
   }] : [])
