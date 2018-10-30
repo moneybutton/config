@@ -1,10 +1,10 @@
 {
-  "name": "mb-config",
+  "name": "@moneybutton/config",
   "version": "0.1.0",
   "description": "Money Button configuration.",
-  "main": "dist/mb-config.cjs.js",
-  "module": "dist/mb-config.esm.js",
-  "unpkg": "dist/mb-config.iife.js",
+  "main": "dist/moneybutton.config.cjs.js",
+  "module": "dist/moneybutton.esm.js",
+  "unpkg": "dist/moneybutton.iife.js",
   "library": "MoneyButtonConfigBuilder",
   "files": ["dist/**"],
   "scripts": {
@@ -20,8 +20,7 @@
   },
   "repository": "https://github.com/moneybutton/yours",
   "author": "Yours Inc.",
-  "license": "UNLICENSED",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.47"
   },
