@@ -1,12 +1,14 @@
 {
   "name": "@moneybutton/config",
-  "version": "0.1.0",
+  "version": "0.1.8",
   "description": "Money Button configuration.",
   "main": "dist/moneybutton.config.cjs.js",
   "module": "dist/moneybutton.esm.js",
   "unpkg": "dist/moneybutton.iife.js",
   "library": "MoneyButtonConfigBuilder",
-  "files": ["dist/**"],
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "lint": "standard --parser=babel-eslint",
     "pretest": "yarn lint",
@@ -16,11 +18,16 @@
     "build:dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build",
     "build:prod": "NODE_ENV=production dotenv -e ../../.env.prod -- yarn build",
     "build:watch": "yarn build -w",
-    "dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build:watch"
+    "dev": "NODE_ENV=dev dotenv -e ../../.env.dev -- yarn build:watch",
+    "predocs": "jsdoc -d docs src/",
+    "docs": "cd docs && http-server ."
   },
-  "repository": "https://github.com/moneybutton/yours",
+  "repository": "https://github.com/moneybutton/config",
   "author": "Yours Inc.",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@babel/runtime": "7.0.0"
   },
@@ -36,6 +43,7 @@
     "concurrently": "3.6.1",
     "dotenv": "5.0.1",
     "dotenv-cli": "1.4.0",
+    "http-server": "0.11.1",
     "mocha": "5.2.0",
     "rollup": "0.66.6",
     "rollup-plugin-babel": "4.0.3",
@@ -49,6 +57,14 @@
     "standard": "11.0.1"
   },
   "standard": {
-    "globals": ["afterEach", "beforeEach", "describe", "it"]
+    "globals": [
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "it"
+    ],
+    "ignore": [
+      "docs/"
+    ]
   }
 }
