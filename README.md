@@ -20,7 +20,7 @@
 
 ## Background
 
-[Money Button](https://www.moneybutton.com) is a UI/UX and API layer for the blockchain which takes 0% transaction fees and makes Bitcoin Cash easy for everyone, everywhere.
+[Money Button](https://www.moneybutton.com) is a UI/UX and API layer for the blockchain which takes 0% transaction fees and makes Bitcoin SV easy for everyone, everywhere.
 
 ## Install
 
